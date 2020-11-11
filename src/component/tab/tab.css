@@ -1,0 +1,31 @@
+.tab {
+	margin-top: 20px;
+}
+
+.tab__nav-container {
+	list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.tab__nav-item {
+	font-size: 14px;
+    font-weight: 700;
+	color: #b8b7b7;
+	cursor: pointer;
+}
+
+.tab__nav-item--selected {
+	color: #000;
+}
+
+.tab__nav-item:not(:first-child) {
+	margin-left: 10px;
+}
+
+.tab__content {
+	font-size: 16px;
+}

@@ -1,0 +1,32 @@
+.tab-changer {
+	display: flex;
+}
+
+.tab-changer__input {
+	border: none;
+    border-bottom: 3px solid #ccc;
+    outline: none;
+    padding: 6px 0;
+    width: 300px;
+}
+
+.tab-changer__input:focus {
+	border-bottom-color: #000;
+	transition: 0.2s border-bottom-color;
+}
+
+.tab-changer__button {
+	border: none;
+    padding: 12px;
+    outline: none;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.tab-changer__button:hover {
+	background: #ccc;
+}
+
+.tab-changer__button:active {
+	transform: translateY(2px);
+}
