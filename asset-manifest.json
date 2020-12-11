@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Tab-Switcher/static/css/main.d2bcd2ce.chunk.css",
+    "main.js": "/Tab-Switcher/static/js/main.37bbb68d.chunk.js",
+    "main.js.map": "/Tab-Switcher/static/js/main.37bbb68d.chunk.js.map",
+    "runtime-main.js": "/Tab-Switcher/static/js/runtime-main.03f795fb.js",
+    "runtime-main.js.map": "/Tab-Switcher/static/js/runtime-main.03f795fb.js.map",
+    "static/js/2.098e494e.chunk.js": "/Tab-Switcher/static/js/2.098e494e.chunk.js",
+    "static/js/2.098e494e.chunk.js.map": "/Tab-Switcher/static/js/2.098e494e.chunk.js.map",
+    "static/js/3.37276531.chunk.js": "/Tab-Switcher/static/js/3.37276531.chunk.js",
+    "static/js/3.37276531.chunk.js.map": "/Tab-Switcher/static/js/3.37276531.chunk.js.map",
+    "index.html": "/Tab-Switcher/index.html",
+    "static/css/main.d2bcd2ce.chunk.css.map": "/Tab-Switcher/static/css/main.d2bcd2ce.chunk.css.map",
+    "static/js/2.098e494e.chunk.js.LICENSE.txt": "/Tab-Switcher/static/js/2.098e494e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.03f795fb.js",
+    "static/js/2.098e494e.chunk.js",
+    "static/css/main.d2bcd2ce.chunk.css",
+    "static/js/main.37bbb68d.chunk.js"
+  ]
+}
