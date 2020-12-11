@@ -12,19 +12,28 @@ class TabChanger extends React.Component {
 
 		this.handleOnClick = this.handleOnClick.bind(this);
 		this.handleOnChange = this.handleOnChange.bind(this);
+		this.pressEnterHandler = this.pressEnterHandler.bind(this);
 	}
 
 	handleOnChange(e) {
-		this.setState({text: e.target.value});
+		this.setState({ text: e.target.value });
 	}
 
 	handleOnClick() {
-		let selectedItem = this.props.items.find(item => item.index === parseInt(this.state.text, 10))?.label;
+		let selectedItem = this.props.items.filter(
+			(item) => this.state.text.toLowerCase() === item.label.toLowerCase()
+		);
 
-		if (selectedItem) {
-			this.props.onChange(selectedItem);
+		if (selectedItem.length) {
+			this.props.onChange(selectedItem[0].label);
 		} else {
 			alert("Please choose a correct index!!!");
+		}
+	}
+	
+	pressEnterHandler(e) {
+		if (e.charCode === 13) {
+			this.handleOnClick();
 		}
 	}
 
@@ -36,8 +45,12 @@ class TabChanger extends React.Component {
 					placeholder="Enter tab index"
 					value={this.state.text}
 					onChange={this.handleOnChange}
+					onKeyPress={this.pressEnterHandler}
 				/>
-				<button className="tab-changer__button" onClick={this.handleOnClick}>
+				<button
+					className="tab-changer__button"
+					onClick={this.handleOnClick}
+				>
 					Change tab
 				</button>
 			</div>

@@ -10,6 +10,7 @@ class Tab extends React.Component {
 	}
 
 	handleOnClick(item) {
+		console.log(item.target.innerHTML)
 		this.props.onChange(item.target.innerHTML);
 	}
 
